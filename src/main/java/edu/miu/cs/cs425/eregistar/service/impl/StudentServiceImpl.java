@@ -13,9 +13,9 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentRepository repository;
 
-//    public StudentServiceImpl(StudentRepository studentRepository) {
-//        this.repository = studentRepository;
-//    }
+    public StudentServiceImpl(StudentRepository studentRepository) {
+        this.repository = studentRepository;
+    }
 
     @Override
     public Iterable<Student> getAllStudents() {

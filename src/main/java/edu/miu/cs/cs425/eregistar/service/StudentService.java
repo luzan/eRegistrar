@@ -6,10 +6,10 @@ import java.util.List;
 
 public interface StudentService {
 
-    abstract Iterable<Student> getAllStudents();
-    abstract Student saveStudent(Student student);
-    abstract Student getStudentById(Integer bookId);
-    abstract void deleteStudentById(Integer bookId);
+    Iterable<Student> getAllStudents();
+    Student saveStudent(Student student);
+    Student getStudentById(Integer bookId);
+    void deleteStudentById(Integer bookId);
     List<Student> findByFirstNameContainingIgnoreCase(String name);
 
 
